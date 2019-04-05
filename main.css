@@ -1,0 +1,46 @@
+body {
+font-family: 'Courier New', Courier, monospace;
+font-size: 16px
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em
+    }
+ p {
+     font-size: 2em
+ }
+ 
+ input {
+     
+     border: none
+ }
+
+input::placeholder{
+    color: white;
+    border: none
+
+}
+select{
+    border: none
+}
+
+form > fieldset:last-child {
+background-color: rgb(63, 248, 156)
+}
+
+input,
+option,
+label,
+select {
+  padding-bottom: 10px;
+  border: none;
+}
+input[type="color"] {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: green;
+  }
+  input[type="color"]:focus {
+    border: none;
+  }
