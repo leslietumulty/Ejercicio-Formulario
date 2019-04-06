@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario AFIP</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="formulario.css">
+    <script src="main.js"></script>
+    <style>
+       
+        
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+      <h1>Formulario AFIP 420</h1>
+      <p>Este formulario te va a robar la vida</p>
+    </header>   
+  <nav>
+    <ul>
+       <li><a href="#sección-1">Sección 1 </a></li>
+       <li><a href="#sección-2">Sección 2 </a></li>
+       <li><a href="#sección-3">Sección 3 </a></li>
+    </ul>
+  </nav>
+
+    <!-- Fin encabezado -->
+
+  <!-- Contenido -->
+  <form action="">
+  <fieldset>
+      <legend>
+          <titulo-de-formulario>Datos Personales</titulo-de-formulario>
+        </legend>
+     <label for="Nombre y Apellido">Nombre y Apellido</label>
+     <input type="text" placeholder="Nombre y apellido"/>
+     <br>
+     <label for="Fecha de Nacimiento">Fecha de Nacimiento</label>
+     <input type="date" /><br>
+     <label for="Edad">Edad</label>
+     <input type="number" placeholder="Edad"/>
+     <br>
+     <!-- Tipo de Sangre -->
+     <label for="Tipo de Sangre"> Tipo de sangre</label>
+     <span id="Tipo de sangre">
+       <br>
+     <label for="Tipo-de-sangre-0">0</label>
+     <input id="Tipo de sangre 0" name= Tipo-de-sangre type="radio" >
+     <label for="Tipo-de-sangre-A">A</label>
+     <input id="Tipo de sangre A" name= Tipo-de-sangre type="radio" >
+     <label for="Tipo-de-sangre-B">B</label>
+     <input id="Tipo de sangre B" name= Tipo-de-sangre type="radio" >
+     <label for="Tipo-de-sangre-AB">AB</label>
+     <input id="Tipo de sangre AB" name= Tipo-de-sangre type="radio" >
+     </span>
+     <br>
+     <!-- Fin tipo de sangre -->
+     <label for="RH de SAngre">RH de sangre</label>
+     <SELEct name="RH-de-sangre" id="RH de sangre">
+         <option value="Seleccione su RH">Seleccione su RH</option>
+         <option value="+">+</option>
+         <option value="-">-</option>
+         <option value="0">0</option>
+     </SELEct><br>
+     <label for="Email">Email</label>
+     <input type="email" placeholder="Email"><br>
+     <label for="Teléfono">Teléfono</label>
+     <input type="number" placeholder="Teléfono"><br>
+     <label for="DNI">Documento de Identidad</label>
+     <input type="number" placeholder="Documento de Identidad"> <br>
+     <label for="Tarjeta de Crédito">Tarjeta de Crédito</label>
+     <input type="number" placeholder="Nro de Tarjeta de crédito"><br>
+    </fieldset>
+  </form>
+
+<!-- Formulario Tarea: Datos de su Auto-->
+<br>
+  <form>
+      <fieldset>
+          <legend>
+              <titulo-de-formulario>Datos de su Automóvil</titulo-de-formulario>
+            </legend>
+            <br>
+            <label for=Marca> Marca del automóvil </label>
+            <input type="text" placeholder= "Marca del automóvil" />
+            <br>
+            <label for="Fecha de Compra">Fecha de Compra</label>
+            <input type="date" /><br>
+            <label for="Patente"> Dominio/Patente </label>
+            <input type="text" placeholder="Dominio/Patente"/> <br>
+            <label for="Tipo Motor">Tipo de motor</label>
+            <SELEct name="Tipo motor"  id="Tipo de motor">
+                <option value="Elija uno">Elija una opción</option>
+                <option value="Nafta">Nafta</option>
+                <option value="Gas">Gas</option>
+                <option value="Gasoil">Gasoil</option>
+            </SELEct>
+            
+            <br>
+
+            <label for="color">Color de su auto</label>
+            <input type="color" name="color" id="color" />
+            <br>
+            <label for="Choques">Sufrió algún choque?</label> <br>
+            <input type="radio" name="choque"   value="Si"> Si<br>
+            <input type="radio" name="choque"   value="No"> No 
+            <br>
+            <label for="Conformidad">Cuán conforme está con su auto?</label>
+            <input type="range" name="Conformidad"  max="100%" min="0%" id="range" /><br>
+            <label for="Foto auto">Suba una foto de su automóvil</label>
+            <input type="file" name="Elegir archivo "><br>
+           <input type="submit" >
+
+      </fieldset>
+  </form>
+<!-- Fin Formulario Tarea: Datos de su Auto-->
+<br>
+<!-- Formulario Tarea: Datos Habitacionales-->
+<form>
+  <fieldset>
+      <legend>
+          <titulo-de-formulario>Datos Habitacionales</titulo-de-formulario>
+        </legend>
+        <br>
+      <label for="Ciudad">Ciudad donde vive</label>
+      <SELEct name="Ciudad" id="Ciudad">
+          <option value="Seleccione su RH">Seleccione una ciudad</option>
+          <option value="CABA">CABA</option>
+          <option value="GBA-Sur">GBA-Sur</option>
+          <option value="GBA-Norte">GBA-Norte</option>
+          <option value="GBA-Oeste">GBA-Oeste</option>
+      </SELEct>
+      <br>
+      <label for="Tipo inmueble">Tipo de Inmueble:</label> <br>
+            <input type="radio" name="inmueble"   value="Casa"> Casa<br>
+            <input type="radio" name="inmueble"   value="Departamento"> Departamento <br>
+            <input type="radio" name="inmueble"   value="PH"> PH
+            <br>
+            <br>
+      <label for="Ambientes">Seleccione todos los ambientes que posee su vivienda:</label> <br>
+          
+            <input type="checkbox" name="Ambientes"   value="Domitorio 1"> Dormitorio 1
+            <input type="checkbox" name="Ambientes"   value="Domitorio 2"> Dormitorio 2 
+            <input type="checkbox" name="Ambientes"   value="Domitorio 3"> Dormitorio 3
+            <input type="checkbox" name="Ambientes"   value="Domitorio 4"> Dormitorio 4
+            <input type="checkbox" name="Ambientes"   value="Cocina"> Cocina <br>
+            <input type="checkbox" name="Ambientes"   value="Patio"> Patio
+            <input type="checkbox" name="Ambientes"   value="Garage"> Garage
+            <input type="checkbox" name="Ambientes"   value="Baño 1"> Baño 1
+            <input type="checkbox" name="Ambientes"   value="Baño 2"> Baño 2
+            <input type="checkbox" name="Ambientes"   value="Baño 3"> Baño 3
+            <input type="checkbox" name="Ambientes"   value="Living"> Living
+            <input type="checkbox" name="Ambientes"   value="Comedor"> Comedor <br>
+            <br>
+      <label for="Inquilino-Propietario">La vivienda que usted habita es:</label>
+            <SELEct name="Inquilino-Propietario" id="Inquilino-Propietario">
+                <option value="Seleccione una opción">Seleccione una opción</option>
+                <option value="Alquilada">Alquilada</option>
+                <option value="Propia">Propia</option>
+                <option value="Prestada">Prestada</option>
+                <option value="Cedida por trabajo">Cedida por trabajo</option>
+            </SELEct>  
+  </fieldset>
+</form>
+<!-- Fin Formulario Tarea: Datos Habitacionales-->
+  <!-- Fin Contenido -->
+
+
+
+</body>
+</html>
